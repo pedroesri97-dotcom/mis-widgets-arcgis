@@ -1,0 +1,17 @@
+{
+  "name": "capas",
+  "label": "Capas",
+  "type": "widget",
+  "version": "1.20.0",
+  "exbVersion": "1.20.0",
+  "author": "Esri NOSA",
+  "description": "Widget de panel operativo para activar y desactivar capas del mapa.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {},
+  "translatedLocales": [],
+  "defaultSize": {
+    "width": 350,
+    "height": 550
+  }
+}
