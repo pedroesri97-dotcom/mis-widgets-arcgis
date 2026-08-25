@@ -1,0 +1,20 @@
+{
+  "name": "plantilla_capas",
+  "label": "Plantilla Capas por Componente",
+  "type": "widget",
+  "version": "1.16.0",
+  "exbVersion": "1.16.0",
+  "author": "Esri NOSA",
+  "description": "Widget de gestión de capas por componentes (Ambiental, Urbanística, Social, Económica) optimizado para ArcGIS Enterprise 11.5.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {},
+  "translatedLocales": [
+    "en",
+    "es"
+  ],
+  "defaultSize": {
+    "width": 380,
+    "height": 680
+  }
+}
