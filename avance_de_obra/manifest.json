@@ -1,0 +1,22 @@
+{
+  "name": "avance-obra-escena-sdp",
+  "label": "Avance de obra (escena) · SDP",
+  "type": "widget",
+  "version": "1.17.0",
+  "exbVersion": "1.17.0",
+  "author": "Esri Colombia / EMB",
+  "description": "Avance de obra 4D sobre el web scene «Avance de obra - PLMB» (portal SDP), en el propio widget o en un widget Mapa: colorea E15, I16 y E16 por estado o por cronograma, con fecha de corte, reproducción, curva programada, corte y volumetría sin las estaciones. Publica una fuente de datos de salida para los widgets nativos de Gráfico, Tabla, Filtro y Lista.",
+  "copyright": "Esri Colombia 2026",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasSetting": true
+  },
+  "dependency": "jimu-arcgis",
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 900,
+    "height": 640
+  }
+}
