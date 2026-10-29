@@ -1,518 +1,58 @@
-System.register(["jimu-core/emotion","jimu-core","jimu-arcgis","jimu-ui"], function(__WEBPACK_DYNAMIC_EXPORT__, __system_context__) {
-	var __WEBPACK_EXTERNAL_MODULE__emotion_react_jsx_runtime__ = {};
-	var __WEBPACK_EXTERNAL_MODULE_jimu_core__ = {};
-	var __WEBPACK_EXTERNAL_MODULE_jimu_arcgis__ = {};
-	var __WEBPACK_EXTERNAL_MODULE_jimu_ui__ = {};
-	Object.defineProperty(__WEBPACK_EXTERNAL_MODULE__emotion_react_jsx_runtime__, "__esModule", { value: true });
-	Object.defineProperty(__WEBPACK_EXTERNAL_MODULE_jimu_core__, "__esModule", { value: true });
-	Object.defineProperty(__WEBPACK_EXTERNAL_MODULE_jimu_arcgis__, "__esModule", { value: true });
-	Object.defineProperty(__WEBPACK_EXTERNAL_MODULE_jimu_ui__, "__esModule", { value: true });
-	return {
-		setters: [
-			function(module) {
-				__WEBPACK_EXTERNAL_MODULE__emotion_react_jsx_runtime__["default"] = module["default"] || module;
-				Object.keys(module).forEach(function(key) {
-					__WEBPACK_EXTERNAL_MODULE__emotion_react_jsx_runtime__[key] = module[key];
-				});
-			},
-			function(module) {
-				__WEBPACK_EXTERNAL_MODULE_jimu_core__["default"] = module["default"] || module;
-				Object.keys(module).forEach(function(key) {
-					__WEBPACK_EXTERNAL_MODULE_jimu_core__[key] = module[key];
-				});
-			},
-			function(module) {
-				__WEBPACK_EXTERNAL_MODULE_jimu_arcgis__["default"] = module["default"] || module;
-				Object.keys(module).forEach(function(key) {
-					__WEBPACK_EXTERNAL_MODULE_jimu_arcgis__[key] = module[key];
-				});
-			},
-			function(module) {
-				__WEBPACK_EXTERNAL_MODULE_jimu_ui__["default"] = module["default"] || module;
-				Object.keys(module).forEach(function(key) {
-					__WEBPACK_EXTERNAL_MODULE_jimu_ui__[key] = module[key];
-				});
-			}
-		],
-		execute: function() {
-			__WEBPACK_DYNAMIC_EXPORT__(
-/******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./your-extensions/widgets/plantilla_capas/src/runtime/translations/default.ts":
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-});
-const __WEBPACK_DEFAULT_EXPORT__ = ({
-  _widgetLabel: 'Plantilla Capas por Componente',
-  title: 'Capas por',
-  titleHighlight: 'componente',
-  selectMapWarning: 'Por favor, seleccione un widget de Mapa en la configuración del widget.'
-});
-/***/ },
-
-/***/ "jimu-arcgis":
-(module) => {
-"use strict";
-module.exports = __WEBPACK_EXTERNAL_MODULE_jimu_arcgis__;
-/***/ },
-
-/***/ "jimu-core":
-(module) => {
-"use strict";
-module.exports = __WEBPACK_EXTERNAL_MODULE_jimu_core__;
-/***/ },
-
-/***/ "jimu-ui":
-(module) => {
-"use strict";
-module.exports = __WEBPACK_EXTERNAL_MODULE_jimu_ui__;
-/***/ },
-
-/***/ "@emotion/react/jsx-runtime":
-(module) => {
-"use strict";
-module.exports = __WEBPACK_EXTERNAL_MODULE__emotion_react_jsx_runtime__;
-/***/ }
-
-/******/ 	});
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			exports: {}
-/******/ 		};
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	(() => {
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	(() => {
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	(() => {
-/******/ 		__webpack_require__.p = "";
-/******/ 	})();
-var __webpack_exports__ = {};
-(() => {
-__webpack_require__.p = window.jimuConfig.baseUrl;
-})();
-
-(() => {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-__webpack_require__.d(__webpack_exports__, {
-  __set_webpack_public_path__: () => (__set_webpack_public_path__),
-  "default": () => (Widget)
-});
-var _emotion_jsx = __webpack_require__("@emotion/react/jsx-runtime");
-var jimu_core = __webpack_require__("jimu-core");
-var jimu_arcgis = __webpack_require__("jimu-arcgis");
-var jimu_ui = __webpack_require__("jimu-ui");
-var defaultMessages = __webpack_require__("./your-extensions/widgets/plantilla_capas/src/runtime/translations/default.ts");
-
-const CATEGORIES = [
-  { key: 'AMBIENTAL', title: 'AMBIENTAL', color: '#10b981', icon: 'plant' },
-  { key: 'URBANÍSTICA', title: 'URBANÍSTICA', color: '#06b6d4', icon: 'building' },
-  { key: 'SOCIAL', title: 'SOCIAL', color: '#a855f7', icon: 'users' },
-  { key: 'ECONÓMICA', title: 'ECONÓMICA', color: '#0ea5e9', icon: 'coins' }
-];
-
-const DEFAULT_LAYERS = [
-  { id: 'env_air', title: 'Calidad del aire', visible: true, componentKey: 'AMBIENTAL', iconType: 'wind' },
-  { id: 'env_noise', title: 'Índices de ruido', visible: true, componentKey: 'AMBIENTAL', iconType: 'sound' },
-  { id: 'env_veg', title: 'Cobertura vegetal', visible: true, componentKey: 'AMBIENTAL', iconType: 'leaf' },
-  { id: 'env_water', title: 'Cuerpos de agua', visible: true, componentKey: 'AMBIENTAL', iconType: 'water' },
-  { id: 'env_risk', title: 'Zonas de riesgo', visible: true, componentKey: 'AMBIENTAL', iconType: 'warning' },
-
-  { id: 'urb_land', title: 'Uso del suelo', visible: false, componentKey: 'URBANÍSTICA', iconType: 'layers' },
-  { id: 'urb_equip', title: 'Equipamientos', visible: false, componentKey: 'URBANÍSTICA', iconType: 'building' },
-  { id: 'urb_mob', title: 'Movilidad vial', visible: false, componentKey: 'URBANÍSTICA', iconType: 'car' },
-  { id: 'urb_space', title: 'Espacio público', visible: false, componentKey: 'URBANÍSTICA', iconType: 'bench' },
-  { id: 'urb_lic', title: 'Licencias urbanas', visible: false, componentKey: 'URBANÍSTICA', iconType: 'doc' },
-
-  { id: 'soc_pop', title: 'Población', visible: false, componentKey: 'SOCIAL', iconType: 'user' },
-  { id: 'soc_health', title: 'Salud', visible: false, componentKey: 'SOCIAL', iconType: 'heart' },
-  { id: 'soc_edu', title: 'Educación', visible: false, componentKey: 'SOCIAL', iconType: 'cap' },
-  { id: 'soc_sec', title: 'Seguridad', visible: false, componentKey: 'SOCIAL', iconType: 'shield' },
-  { id: 'soc_part', title: 'Participación ciudadana', visible: false, componentKey: 'SOCIAL', iconType: 'users' },
-
-  { id: 'eco_com', title: 'Actividad comercial', visible: false, componentKey: 'ECONÓMICA', iconType: 'bag' },
-  { id: 'eco_emp', title: 'Empleo', visible: false, componentKey: 'ECONÓMICA', iconType: 'case' },
-  { id: 'eco_tour', title: 'Turismo', visible: false, componentKey: 'ECONÓMICA', iconType: 'camera' },
-  { id: 'eco_inv', title: 'Inversión', visible: false, componentKey: 'ECONÓMICA', iconType: 'chart' },
-  { id: 'eco_cad', title: 'Catastro económico', visible: false, componentKey: 'ECONÓMICA', iconType: 'filechart' }
-];
-
-class Widget extends jimu_core.React.PureComponent {
-  constructor() {
-    super(...arguments);
-    this.handles = [];
-    this.state = {
-      jmv: null,
-      expandedGroups: { AMBIENTAL: true, URBANÍSTICA: false, SOCIAL: false, ECONÓMICA: false },
-      layers: DEFAULT_LAYERS,
-      mapConnected: false
-    };
-    this.clearWatchers = () => {
-      this.handles.forEach(h => {
-        if (h && typeof h.remove === 'function') h.remove();
-      });
-      this.handles = [];
-    };
-    this.activeViewChangeHandler = (jmv) => {
-      if (jmv) {
-        this.setState({ jmv: jmv, mapConnected: true });
-        this.syncMapLayers(jmv);
-        if (jmv.view && jmv.view.map && jmv.view.map.layers) {
-          jmv.view.map.layers.on('change', () => {
-            this.syncMapLayers(jmv);
-          });
-        }
-      }
-    };
-    this.syncMapLayers = (jmv) => {
-      if (!jmv || !jmv.view || !jmv.view.map) return;
-      this.clearWatchers();
-      const mapLayers = jmv.view.map.layers;
-      const updatedLayers = [...this.state.layers];
-
-      const processLayer = (layer, parentCategory) => {
-        if (layer.type === 'group') {
-          const groupTitle = (layer.title || '').toLowerCase();
-          let compKey = parentCategory;
-          if (!compKey) {
-            if (groupTitle.includes('ambien') || groupTitle.includes('agua') || groupTitle.includes('ruido') || groupTitle.includes('riesgo') || groupTitle.includes('arbol')) {
-              compKey = 'AMBIENTAL';
-            } else if (groupTitle.includes('socia') || groupTitle.includes('salud') || groupTitle.includes('pobl') || groupTitle.includes('edu')) {
-              compKey = 'SOCIAL';
-            } else if (groupTitle.includes('econ') || groupTitle.includes('comer') || groupTitle.includes('inver')) {
-              compKey = 'ECONÓMICA';
-            } else if (groupTitle.includes('urban') || groupTitle.includes('suelo') || groupTitle.includes('vial') || groupTitle.includes('licencia')) {
-              compKey = 'URBANÍSTICA';
-            }
-          }
-          const sublayers = layer.layers;
-          if (sublayers && typeof sublayers.forEach === 'function') {
-            sublayers.forEach(sub => processLayer(sub, compKey));
-          }
-        } else {
-          const titleLower = (layer.title || layer.id).toLowerCase();
-          let compKey = parentCategory || 'URBANÍSTICA';
-          if (!parentCategory) {
-            if (titleLower.includes('ambien') || titleLower.includes('agua') || titleLower.includes('ruido') || titleLower.includes('riesgo') || titleLower.includes('arbol')) {
-              compKey = 'AMBIENTAL';
-            } else if (titleLower.includes('socia') || titleLower.includes('salud') || titleLower.includes('pobl') || titleLower.includes('edu')) {
-              compKey = 'SOCIAL';
-            } else if (titleLower.includes('econ') || titleLower.includes('comer') || titleLower.includes('inver')) {
-              compKey = 'ECONÓMICA';
-            }
-          }
-          const existing = updatedLayers.find(l => l.id === layer.id || l.title.toLowerCase() === (layer.title || '').toLowerCase());
-          if (existing) {
-            existing.layer = layer;
-            existing.visible = layer.visible;
-            existing.componentKey = compKey;
-          } else {
-            updatedLayers.push({
-              id: layer.id,
-              title: layer.title || layer.id,
-              visible: layer.visible,
-              componentKey: compKey,
-              iconType: 'layers',
-              layer: layer
-            });
-          }
-          if (typeof layer.watch === 'function') {
-            const handle = layer.watch('visible', (newVal) => {
-              this.setState(prevState => ({
-                layers: prevState.layers.map(l => l.id === layer.id ? Object.assign({}, l, { visible: newVal }) : l)
-              }));
-            });
-            this.handles.push(handle);
-          }
-        }
-      };
-
-      mapLayers.forEach(layer => processLayer(layer));
-      this.setState({ layers: updatedLayers });
-    };
-
-    this.toggleGroup = (groupKey) => {
-      this.setState(prevState => ({
-        expandedGroups: Object.assign({}, prevState.expandedGroups, { [groupKey]: !prevState.expandedGroups[groupKey] })
-      }));
-    };
-    this.toggleLayerVisibility = (layerId) => {
-      this.setState(prevState => {
-        const newLayers = prevState.layers.map(item => {
-          if (item.id === layerId) {
-            const newVis = !item.visible;
-            if (item.layer) item.layer.visible = newVis;
-            return Object.assign({}, item, { visible: newVis });
-          }
-          return item;
-        });
-        return { layers: newLayers };
-      });
-    };
+System.register(["jimu-core","jimu-arcgis","esri/WebScene","esri/views/SceneView","esri/layers/FeatureLayer","esri/layers/GraphicsLayer","esri/Graphic","esri/geometry/Point","esri/geometry/Polygon","esri/widgets/Slice","esri/layers/support/SceneFilter"],function(e,t){var a={},n={},o={},r={},s={},i={},l={},c={},u={},d={},p={};return{setters:[function(e){a.DataSourceComponent=e.DataSourceComponent,a.DataSourceStatus=e.DataSourceStatus,a.EsriFieldType=e.EsriFieldType,a.Immutable=e.Immutable,a.JimuFieldType=e.JimuFieldType,a.React=e.React,a.ReactDOM=e.ReactDOM,a.ReactRedux=e.ReactRedux,a.appActions=e.appActions,a.css=e.css,a.getAppStore=e.getAppStore,a.jsx=e.jsx},function(e){n.JimuMapViewComponent=e.JimuMapViewComponent},function(e){o.default=e.default||e},function(e){r.default=e.default||e},function(e){s.default=e.default||e},function(e){i.default=e.default||e},function(e){l.default=e.default||e},function(e){c.default=e.default||e},function(e){u.default=e.default||e},function(e){d.default=e.default||e},function(e){p.default=e.default||e}],execute:function(){e((()=>{var e={89(e){"use strict";e.exports=l},253(e){"use strict";e.exports=o},422(e){"use strict";e.exports=c},526(e){"use strict";e.exports=u},633(e){"use strict";e.exports=s},620(e){"use strict";e.exports=i},144(e){"use strict";e.exports=p},529(e){"use strict";e.exports=r},893(e){"use strict";e.exports=d},686(e){"use strict";e.exports=n},244(e){"use strict";e.exports=a}},t={};function f(a){var n=t[a];if(void 0!==n)return n.exports;var o=t[a]={exports:{}};return e[a](o,o.exports,f),o.exports}f.d=(e,t)=>{for(var a in t)f.o(t,a)&&!f.o(e,a)&&Object.defineProperty(e,a,{enumerable:!0,get:t[a]})},f.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),f.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.p="";var v={};return f.p=window.jimuConfig.baseUrl,(()=>{"use strict";f.r(v),f.d(v,{__set_webpack_public_path__:()=>se,default:()=>re});var e=f(244),t=f(686),a=f(253),n=f(529),o=f(633),r=f(620),s=f(89),i=f(422),l=f(526),c=f(893),u=f(144);const d="avance-4d",p=864e5,h=e=>Math.floor(e/p)*p,m=()=>h(Date.now()),g=e=>new Date(e).toISOString().slice(0,10),x=[{value:"Construido",color:[68,197,138],css:"#44c58a",note:"Terminado y con fin programado a la fecha"},{value:"Atrasado",color:[239,100,100],css:"#ef6464",note:"Fin programado vencido y avance menor a 100 %"},{value:"En ejecuci\xf3n",color:[242,201,76],css:"#f2c94c",note:"Entre el inicio y el fin programados"},{value:"Inicia en 30 d\xedas",color:[78,168,255],css:"#4ea8ff",note:"Inicio programado en los pr\xf3ximos 30 d\xedas"},{value:"M\xe1s adelante",color:[96,112,128],css:"#607080",note:"Inicio programado a m\xe1s de 30 d\xedas"},{value:"Sin programaci\xf3n",color:[154,165,177],css:"#9aa5b1",note:"Sin fechas de actividad"}],b=e=>{var t,a;const n=null!==(t=e.FechaInicioDate)&&void 0!==t?t:e.FechaFinDate,o=null!==(a=e.FechaFinDate)&&void 0!==a?a:e.FechaInicioDate;return null==n?null:[n,Math.max(n,o)]};function y(e,t){var a;const n=b(e);if(!n)return"Sin programaci\xf3n";const[o,r]=n;return(null!==(a=e.Avance)&&void 0!==a?a:0)>=100&&(r<=t||t>=m())?"Construido":r<=t&&null!=e.FechaFinDate?"Atrasado":o<=t?"En ejecuci\xf3n":o-t<=30*p?"Inicia en 30 d\xedas":"M\xe1s adelante"}function j(e,t){const a=b(e);if(!a)return null;const[n,o]=a;return t>=o?1:t<n?0:(t-n+p)/(o-n+p)}const w=[[1,"1 d\xeda"],[7,"1 semana"],[30,"1 mes"]],S=700,R=80,k=(e,t=0)=>Number(e).toLocaleString("es-CO",{maximumFractionDigits:t,minimumFractionDigits:t}),I=e.css`
+  font-size: 12px;
+  h4 { font-size: 12px; font-weight: 600; margin: 10px 0 4px; }
+  .date { display: flex; align-items: center; gap: 6px; }
+  .date input[type=date] { flex: 1; min-width: 0; }
+  button { font-size: 12px; padding: 2px 8px; border-radius: 4px; border: 1px solid currentColor; background: transparent; color: inherit; cursor: pointer; }
+  button[aria-pressed=true] { background: rgba(78, 168, 255, 0.25); }
+  input[type=range] { width: 100%; margin: 6px 0 2px; }
+  .ends { display: flex; justify-content: space-between; font-size: 11px; opacity: 0.7; }
+  .row { display: flex; align-items: center; gap: 6px; margin: 6px 0; }
+  .row select { flex: 1; min-width: 0; }
+  label { display: flex; align-items: center; gap: 6px; margin: 3px 0; cursor: pointer; }
+  .kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+  .kpi { border: 1px solid rgba(127, 140, 153, 0.35); border-radius: 5px; padding: 4px 6px; }
+  .kpi small { display: block; font-size: 10px; opacity: 0.75; text-transform: uppercase; letter-spacing: 0.03em; }
+  .kpi b { font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .kpi.bad b { color: #ef6464; }
+  .kpi.good b { color: #44c58a; }
+  .bar { display: flex; height: 8px; border-radius: 3px; overflow: hidden; margin: 4px 0 6px; background: rgba(127, 140, 153, 0.2); }
+  .classes div { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+  .classes span { flex: 1; }
+  .classes b { font-weight: normal; opacity: 0.75; font-variant-numeric: tabular-nums; }
+  .swatch { width: 10px; height: 10px; border-radius: 2px; flex: none; display: inline-block; }
+  svg { width: 100%; height: 90px; display: block; }
+  .hint { opacity: 0.75; margin: 6px 0 0; line-height: 1.35; }
+`;function C(t){var a;const{elements:n,cutoff:o,onCutoffChange:r}=t,[s,i]=e.React.useState(7),[l,c]=e.React.useState(!1),[u,d]=e.React.useMemo(()=>{const e=function(e){let t=1/0,a=-1/0;for(const n of e){const e=b(n);e&&(t=Math.min(t,e[0]),a=Math.max(a,e[1]))}return t===1/0?null:[t,a]}(n);return e?[e[0],Math.max(e[1],m())]:[m()-365*p,m()]},[n]),f=e.React.useRef(o);f.current=o,e.React.useEffect(()=>{if(!l)return;const e=setInterval(()=>{const e=Math.min(f.current+s*p,d);r(e),e>=d&&c(!1)},S);return()=>{clearInterval(e)}},[l,s,d,r]);const v=e=>{c(!1),r(h(e))},C=e.React.useMemo(()=>{var e,t;const a={};let r=0,s=0,i=0;for(const l of n){const n=y(l,o);a[n]=(null!==(e=a[n])&&void 0!==e?e:0)+1;const c=j(l,o);null!=c&&(r++,s+=c,i+=Math.min(Math.max(null!==(t=l.Avance)&&void 0!==t?t:0,0),100)/100)}return{counts:a,scheduled:r,planned:r?100*s/r:0,reported:r?100*i/r:0}},[n,o]),F=e.React.useMemo(()=>{const e=n.filter(e=>null!=e.FechaInicioDate||null!=e.FechaFinDate);if(!e.length)return"";const t=[];for(let a=0;a<=R;a++){const n=u+(d-u)*a/R,o=e.reduce((e,t)=>e+j(t,n),0)/e.length;t.push(`${(100*a/R).toFixed(2)},${(100-100*o).toFixed(2)}`)}return t.join(" ")},[n,u,d]),E=e=>d>u?100*(e-u)/(d-u):0,M=C.planned-C.reported,D=n.length;return(0,e.jsx)("div",{css:I,className:"avance-schedule-panel"},(0,e.jsx)("div",{className:"date"},(0,e.jsx)("input",{type:"date",value:g(o),min:g(u),max:g(d),"aria-label":"Fecha de corte",onChange:e=>{const t=Date.parse(e.target.value);Number.isNaN(t)||v(t)}}),(0,e.jsx)("button",{type:"button",onClick:()=>{v(m())}},"Hoy")),(0,e.jsx)("input",{type:"range",min:u,max:d,step:p,value:Math.min(Math.max(o,u),d),"aria-label":"Fecha de corte",onChange:e=>{v(Number(e.target.value))}}),(0,e.jsx)("div",{className:"ends"},(0,e.jsx)("span",null,g(u)),(0,e.jsx)("span",null,g(d))),(0,e.jsx)("div",{className:"row"},(0,e.jsx)("button",{type:"button",onClick:()=>{!l&&o>=d&&r(u),c(!l)},"aria-pressed":l},l?"\u275a\u275a Pausa":"\u25b6 Reproducir"),(0,e.jsx)("select",{value:s,"aria-label":"Paso de la reproducci\xf3n",onChange:e=>{i(Number(e.target.value))}},w.map(([t,a])=>(0,e.jsx)("option",{key:t,value:t},a," por paso")))),(0,e.jsx)("label",null,(0,e.jsx)("input",{type:"checkbox",checked:t.buildUp,onChange:e=>{t.onBuildUpChange(e.target.checked)}}),"Mostrar la obra a la fecha (oculta lo que a\xfan no inicia)"),(0,e.jsx)("label",null,(0,e.jsx)("input",{type:"checkbox",checked:t.hideUnscheduled,onChange:e=>{t.onHideUnscheduledChange(e.target.checked)}}),"Ocultar elementos sin programaci\xf3n"),(0,e.jsx)("h4",null,"Al ",g(o)),(0,e.jsx)("div",{className:"kpis"},(0,e.jsx)("div",{className:"kpi"},(0,e.jsx)("small",null,"Programado"),(0,e.jsx)("b",null,k(C.planned,1)," %")),(0,e.jsx)("div",{className:"kpi good"},(0,e.jsx)("small",null,"Real (\xfaltimo reporte)"),(0,e.jsx)("b",null,k(C.reported,1)," %")),(0,e.jsx)("div",{className:"kpi "+(M>.05?"bad":"good")},(0,e.jsx)("small",null,M>.05?"Atraso":"Adelanto"),(0,e.jsx)("b",null,k(Math.abs(M),1)," pts")),(0,e.jsx)("div",{className:"kpi "+(C.counts.Atrasado?"bad":"good")},(0,e.jsx)("small",null,"Atrasados"),(0,e.jsx)("b",null,k(null!==(a=C.counts.Atrasado)&&void 0!==a?a:0)))),(0,e.jsx)("h4",null,"Curva programada"),(0,e.jsx)("svg",{viewBox:"-2 -4 104 108",preserveAspectRatio:"none",role:"img","aria-label":`Curva de avance programado; al corte ${k(C.planned,1)} %, real ${k(C.reported,1)} %`},(0,e.jsx)("line",{x1:"0",y1:"100",x2:"100",y2:"100",stroke:"currentColor",strokeOpacity:"0.3",vectorEffect:"non-scaling-stroke"}),(0,e.jsx)("line",{x1:"0",y1:"0",x2:"100",y2:"0",stroke:"currentColor",strokeOpacity:"0.15",strokeDasharray:"2 2",vectorEffect:"non-scaling-stroke"}),F&&(0,e.jsx)("polyline",{points:F,fill:"none",stroke:"#4ea8ff",strokeWidth:"2",vectorEffect:"non-scaling-stroke"}),(0,e.jsx)("line",{x1:E(o),y1:"0",x2:E(o),y2:"100",stroke:"#f2c94c",strokeWidth:"1.5",vectorEffect:"non-scaling-stroke"}),(0,e.jsx)("circle",{cx:E(m()),cy:100-C.reported,r:"2",fill:"#44c58a"})),(0,e.jsx)("div",{className:"ends"},(0,e.jsx)("span",null,"Azul: programado \xb7 Verde: real hoy"),(0,e.jsx)("span",null,"Amarillo: corte")),(0,e.jsx)("h4",null,"Cronograma \xb7 ",k(C.scheduled)," de ",k(D)," elementos con fechas"),(0,e.jsx)("div",{className:"bar","aria-hidden":"true"},x.map(t=>{var a;return(0,e.jsx)("i",{key:t.value,style:{width:100*(null!==(a=C.counts[t.value])&&void 0!==a?a:0)/Math.max(D,1)+"%",background:t.css}})})),(0,e.jsx)("div",{className:"classes"},x.map(t=>{var a;return(0,e.jsx)("div",{key:t.value,title:t.note},(0,e.jsx)("i",{className:"swatch",style:{background:t.css}}),(0,e.jsx)("span",null,t.value),(0,e.jsx)("b",null,k(null!==(a=C.counts[t.value])&&void 0!==a?a:0)))})),(0,e.jsx)("p",{className:"hint"},"El programado sale de las fechas de actividad; el real es el \xfaltimo % reportado, as\xed que antes de hoy compara el plan con lo que hay hoy."))}var F=function(e,t,a,n){return new(a||(a=Promise))(function(o,r){function s(e){try{l(n.next(e))}catch(e){r(e)}}function i(e){try{l(n.throw(e))}catch(e){r(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof a?t:new a(function(e){e(t)})).then(s,i)}l((n=n.apply(e,t||[])).next())})};const E=6378137,M=.00669437999014,D=([e,t,a])=>{const n=Math.hypot(e,t);let o=Math.atan2(a,n*(1-M));for(let e=0;e<4;e++){const e=E/Math.sqrt(1-M*Math.pow(Math.sin(o),2));o=Math.atan2(a+M*e*Math.sin(o),n)}return[180*Math.atan2(t,e)/Math.PI,180*o/Math.PI]},N=([e,t,a,n],o)=>{const r=[2*(t*o[2]-a*o[1]),2*(a*o[0]-e*o[2]),2*(e*o[1]-t*o[0])];return[o[0]+n*r[0]+t*r[2]-a*r[1],o[1]+n*r[1]+a*r[0]-e*r[2],o[2]+n*r[2]+e*r[1]-t*r[0]]},A=e=>{const t=(([e,t,a])=>{const[n,o]=[e*Math.PI/180,t*Math.PI/180],r=E/Math.sqrt(1-M*Math.pow(Math.sin(o),2));return[(r+a)*Math.cos(o)*Math.cos(n),(r+a)*Math.cos(o)*Math.sin(n),(r*(1-M)+a)*Math.sin(o)]})(e.center),a=[];for(let n=0;n<8;n++){const o=[1&n?1:-1,2&n?1:-1,4&n?1:-1],r=N(e.quaternion,[o[0]*e.halfSize[0],o[1]*e.halfSize[1],o[2]*e.halfSize[2]]);a.push(D([t[0]+r[0],t[1]+r[1],t[2]+r[2]]))}const n=(e=>{const t=[...e].sort((e,t)=>e[0]-t[0]||e[1]-t[1]),a=(e,t,a)=>(t[0]-e[0])*(a[1]-e[1])-(t[1]-e[1])*(a[0]-e[0]),n=e=>{const t=[];for(const n of e){for(;t.length>=2&&a(t[t.length-2],t[t.length-1],n)<=0;)t.pop();t.push(n)}return t.pop(),t};return[...n(t),...n([...t].reverse())]})(a);return[...n,n[0]]},$=e=>{const t=111320*Math.cos(e[0][1]*Math.PI/180);let a=0;for(let n=0;n<e.length-1;n++)a+=t*e[n][0]*110574*e[n+1][1]-t*e[n+1][0]*110574*e[n][1];return Math.abs(a/2)},O=2e4;const T="OBJECTID",P=[[T,"OBJECTID","oid"],["OID","ObjectID en la capa de escena","number"],["Seccion","Secci\xf3n","string"],["EstadoAvance","Estado de avance","string"],["Avance","Avance (%)","number"],["Actividad","Actividad","string"],["ActividadNombre","Nombre de actividad","string"],["Contratista","Contratista","string"],["Categoria","Categor\xeda Revit","string"],["Nivel","Nivel","string"],["Disciplina","Disciplina","string"],["Modelo","Modelo Revit","string"],["UE","Unidad de ejecuci\xf3n","string"],["Family","Familia","string"],["Type","Tipo","string"],["IfcGUID","IfcGUID","string"],["ExtId","ID de Revit","string"],["FechaInicio","Inicio (texto)","string"],["FechaFin","Fin (texto)","string"],["FechaInicioDate","Inicio","date"],["FechaFinDate","Fin","date"],["z","Cota base (m)","number"]],U=(e.JimuFieldType.Number,e.EsriFieldType.OID,e.JimuFieldType.Number,e.EsriFieldType.Double,e.JimuFieldType.String,e.EsriFieldType.String,e.JimuFieldType.Date,e.EsriFieldType.Date,P.map(([e])=>e));var _=function(e,t,a,n){return new(a||(a=Promise))(function(o,r){function s(e){try{l(n.next(e))}catch(e){r(e)}}function i(e){try{l(n.throw(e))}catch(e){r(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof a?t:new a(function(e){e(t)})).then(s,i)}l((n=n.apply(e,t||[])).next())})};const z=[{value:"Terminado",color:[68,197,138],css:"#44c58a"},{value:"En curso",color:[242,201,76],css:"#f2c94c"},{value:"No iniciado",color:[239,100,100],css:"#ef6464"},{value:"Sin dato",color:[154,165,177],css:"#9aa5b1"}],B={E15:"Estaci\xf3n 15 \xb7 Calle 63",I16:"Interestaci\xf3n 16 \xb7 viaducto",E16:"Estaci\xf3n 16 \xb7 Calle 72"},V={E15:"https://tiles.arcgis.com/tiles/BQTQBNBsmxjF8vus/arcgis/rest/services/E15_Avance_3DObject/SceneServer/layers/0",I16:"https://tiles.arcgis.com/tiles/BQTQBNBsmxjF8vus/arcgis/rest/services/I16_Avance_3DObject_/SceneServer/layers/0",E16:"https://tiles.arcgis.com/tiles/BQTQBNBsmxjF8vus/arcgis/rest/services/E16_Avance_3DObject/SceneServer/layers/0"},q={portalUrl:"https://sinupotdes.sdp.gov.co/portalp",id:"839de5bdfa814f60b2a1baa743bc7f56"},L="https://arcgis.esri.co/server/rest/services/Hosted/Volumetria_2021__Octubre_2026_Fachada/SceneServer/layers/0",J=[["Avance","Avance (%)"],["Actividad","Actividad"],["ActividadNombre","Nombre de actividad"],["FechaInicio","Inicio"],["FechaFin","Fin"],["Contratista","Contratista"],["UE","Unidad de ejecuci\xf3n"],["Categoria","Categor\xeda"],["Family","Familia"],["Type","Tipo"],["Nivel","Nivel"],["IfcGUID","IfcGUID"],["ExtId","ID de Revit"],["Seccion","Secci\xf3n"],["Modelo","Modelo Revit"]],G=5e3,Q=6,H=e=>null==e?void 0:e.replace(/\/layers\/\d+\/?$/,"").replace(/\/$/,"").toLowerCase(),W=e=>e.allLayers.filter(e=>"scene"===e.type).toArray(),K=(e,t,a)=>{var n;const o=W(e);return null!==(n=o.find(e=>H(e.url)===H(t)))&&void 0!==n?n:o.find(e=>{var t;return a.test(null!==(t=e.title)&&void 0!==t?t:"")})},X=e=>({type:"mesh-3d",symbolLayers:[{type:"fill",material:e?{color:e,colorMixMode:"replace"}:void 0}]}),Y={status:{type:"unique-value",field:"EstadoAvance",uniqueValueInfos:z.map(e=>({value:e.value,label:e.value,symbol:X([...e.color,"Sin dato"===e.value?.55:1])})),defaultSymbol:X([154,165,177,.55])},source:{type:"simple",symbol:X(null)}};function Z(e,t){const a=new Map;for(const n of e){const e=y(n,t);a.has(e)||a.set(e,[]),a.get(e).push(n.OID)}const n=new Map(x.map(e=>[e.value,X([...e.color,"Sin programaci\xf3n"===e.value?.35:1])]));return{type:"unique-value",field:"OBJECTID_1",uniqueValueInfos:[...a].flatMap(([e,t])=>t.map(t=>({value:t,label:e,symbol:n.get(e)}))),defaultSymbol:n.get("Sin programaci\xf3n")}}const ee=e=>Number(e).toLocaleString("es-CO"),te=e=>{var t,a;return null!==(a=null===(t=z.find(t=>t.value===e))||void 0===t?void 0:t.css)&&void 0!==a?a:"#9aa5b1"},ae=e=>{var t,a;return null!==(a=null===(t=x.find(t=>t.value===e))||void 0===t?void 0:t.css)&&void 0!==a?a:"#9aa5b1"},ne=e.css`
+  position: relative; height: 100%; overflow: hidden; font-size: 12px;
+  .scene { position: absolute; inset: 0; background: #0b1117; }
+  .panel {
+    height: 100%; overflow: auto; padding: 10px 12px;
+    background: var(--sys-color-surface-paper, #101820); color: var(--sys-color-surface-paper-text, #e6edf3);
   }
-  componentWillUnmount() {
-    this.clearWatchers();
+  .scene + .panel {
+    position: absolute; top: 10px; left: 10px; width: 300px; height: auto; max-height: calc(100% - 20px);
+    background: rgba(16, 24, 32, 0.92); color: #e6edf3; border-radius: 6px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   }
-  renderCategoryIcon(iconName, color) {
-    switch (iconName) {
-      case 'plant':
-        return (_emotion_jsx.jsxs)("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [(_emotion_jsx.jsx)("path", { d: "M12 10a6 6 0 0 0-6-6H3v3a6 6 0 0 0 6 6h3" }), (_emotion_jsx.jsx)("path", { d: "M12 14a6 6 0 0 1 6-6h3v3a6 6 0 0 1-6 6h-3" }), (_emotion_jsx.jsx)("path", { d: "M12 22V10" })] });
-      case 'building':
-        return (_emotion_jsx.jsxs)("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [(_emotion_jsx.jsx)("rect", { x: "4", y: "2", width: "16", height: "20", rx: "2" }), (_emotion_jsx.jsx)("path", { d: "M9 6h2" }), (_emotion_jsx.jsx)("path", { d: "M13 6h2" }), (_emotion_jsx.jsx)("path", { d: "M9 10h2" }), (_emotion_jsx.jsx)("path", { d: "M13 10h2" }), (_emotion_jsx.jsx)("path", { d: "M9 14h2" }), (_emotion_jsx.jsx)("path", { d: "M13 14h2" }), (_emotion_jsx.jsx)("path", { d: "M9 18h6" })] });
-      case 'users':
-        return (_emotion_jsx.jsxs)("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [(_emotion_jsx.jsx)("path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" }), (_emotion_jsx.jsx)("circle", { cx: "9", cy: "7", r: "4" }), (_emotion_jsx.jsx)("path", { d: "M22 21v-2a4 4 0 0 0-3-3.87" }), (_emotion_jsx.jsx)("path", { d: "M16 3.13a4 4 0 0 1 0 7.75" })] });
-      case 'coins':
-        return (_emotion_jsx.jsxs)("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [(_emotion_jsx.jsx)("ellipse", { cx: "12", cy: "6", rx: "8", ry: "3" }), (_emotion_jsx.jsx)("path", { d: "M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" }), (_emotion_jsx.jsx)("path", { d: "M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" })] });
-      default: return null;
-    }
-  }
-  renderLayerIcon(iconType, color) {
-    switch (iconType) {
-      case 'wind': return (_emotion_jsx.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: (_emotion_jsx.jsx)("path", { d: "M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" }) });
-      case 'sound': return (_emotion_jsx.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: (_emotion_jsx.jsx)("path", { d: "M2 10v4m4-7v10m4-13v16m4-11v6m4-9v12m4-7v2" }) });
-      case 'leaf': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("path", { d: "M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.12 2 9 0 5.5-4.5 9-10 9z" }), (_emotion_jsx.jsx)("path", { d: "M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" })] });
-      case 'water': return (_emotion_jsx.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: (_emotion_jsx.jsx)("path", { d: "M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" }) });
-      case 'warning': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("path", { d: "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" }), (_emotion_jsx.jsx)("line", { x1: "12", y1: "9", x2: "12", y2: "13" }), (_emotion_jsx.jsx)("line", { x1: "12", y1: "17", x2: "12.01", y2: "17" })] });
-      case 'layers': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("polygon", { points: "12 2 2 7 12 12 22 7 12 2" }), (_emotion_jsx.jsx)("polyline", { points: "2 17 12 22 22 17" }), (_emotion_jsx.jsx)("polyline", { points: "2 12 12 17 22 12" })] });
-      case 'car': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("rect", { x: "3", y: "11", width: "18", height: "7", rx: "2" }), (_emotion_jsx.jsx)("path", { d: "M5 11l2-5h10l2 5" }), (_emotion_jsx.jsx)("circle", { cx: "7", cy: "18", r: "1.5" }), (_emotion_jsx.jsx)("circle", { cx: "17", cy: "18", r: "1.5" })] });
-      case 'bench': return (_emotion_jsx.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: (_emotion_jsx.jsx)("path", { d: "M3 17h18M4 11h16M4 11v6M20 11v6M5 17v4M19 17v4" }) });
-      case 'doc':
-      case 'filechart': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("path", { d: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" }), (_emotion_jsx.jsx)("polyline", { points: "14 2 14 8 20 8" })] });
-      case 'user': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("path", { d: "M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" }), (_emotion_jsx.jsx)("circle", { cx: "12", cy: "7", r: "4" })] });
-      case 'heart': return (_emotion_jsx.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: (_emotion_jsx.jsx)("path", { d: "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" }) });
-      case 'cap': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("path", { d: "M22 10v6M2 10l10-5 10 5-10 5z" }), (_emotion_jsx.jsx)("path", { d: "M6 12v5c3 3 9 3 12 0v-5" })] });
-      case 'shield': return (_emotion_jsx.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: (_emotion_jsx.jsx)("path", { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" }) });
-      case 'bag': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("path", { d: "M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" }), (_emotion_jsx.jsx)("line", { x1: "3", y1: "6", x2: "21", y2: "6" }), (_emotion_jsx.jsx)("path", { d: "M16 10a4 4 0 0 1-8 0" })] });
-      case 'case': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("rect", { x: "2", y: "7", width: "20", height: "14", rx: "2" }), (_emotion_jsx.jsx)("path", { d: "M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" })] });
-      case 'camera': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("path", { d: "M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" }), (_emotion_jsx.jsx)("circle", { cx: "12", cy: "13", r: "4" })] });
-      case 'chart': return (_emotion_jsx.jsxs)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: [(_emotion_jsx.jsx)("polyline", { points: "23 6 13.5 15.5 8.5 10.5 1 18" }), (_emotion_jsx.jsx)("polyline", { points: "17 6 23 6 23 12" })] });
-      default: return (_emotion_jsx.jsx)("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: color, strokeWidth: "2", children: (_emotion_jsx.jsx)("circle", { cx: "12", cy: "12", r: "8" }) });
-    }
-  }
-  render() {
-    var _a, _b, _c;
-    const { expandedGroups, layers } = this.state;
-    const titlePrefix = ((_a = this.props.config) === null || _a === void 0 ? void 0 : _a.title) || 'Capas por';
-    const titleHighlight = ((_b = this.props.config) === null || _b === void 0 ? void 0 : _b.titleHighlight) || 'componente';
-    const hasMap = this.props.useMapWidgetIds && this.props.useMapWidgetIds.length > 0;
-    const mapWidgetId = hasMap ? this.props.useMapWidgetIds[0] : null;
-
-    const style = jimu_core.css`
-      background-color: #030712;
-      color: #f8fafc;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      height: 100%;
-      width: 100%;
-      overflow-y: auto;
-      box-sizing: border-box;
-      padding: 20px 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-
-      .widget-title {
-        font-size: 1.4rem;
-        font-weight: 800;
-        color: #ffffff;
-        margin: 0 0 6px 0;
-        letter-spacing: -0.3px;
-
-        .highlight {
-          color: #06b6d4;
-          margin-left: 6px;
-        }
-      }
-
-      .category-container {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-      }
-
-      .category-card {
-        background-color: #0a1120;
-        border-radius: 10px;
-        overflow: hidden;
-        border: 1px solid #1e293b;
-        transition: border-color 0.25s ease, box-shadow 0.25s ease;
-
-        &.expanded {
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .category-header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 14px 16px;
-          cursor: pointer;
-          user-select: none;
-          background: #0a1120;
-
-          .header-left {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-
-            .category-title {
-              font-size: 0.85rem;
-              font-weight: 800;
-              letter-spacing: 0.8px;
-            }
-          }
-
-          .chevron-icon {
-            color: #64748b;
-            transition: transform 0.25s ease;
-            display: flex;
-            align-items: center;
-          }
-        }
-
-        .category-body {
-          padding: 4px 12px 14px 12px;
-          display: flex;
-          flex-direction: column;
-          gap: 6px;
-          background: #090e1a;
-          border-top: 1px solid rgba(255, 255, 255, 0.05);
-
-          .layer-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 9px 12px;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.02);
-            transition: background 0.15s ease;
-
-            &:hover {
-              background: rgba(255, 255, 255, 0.05);
-            }
-
-            .layer-left {
-              display: flex;
-              align-items: center;
-              gap: 12px;
-
-              .layer-label {
-                font-size: 0.85rem;
-                font-weight: 500;
-                color: #e2e8f0;
-              }
-            }
-          }
-        }
-      }
-    `;
-
-    return (_emotion_jsx.jsxs)("div", {
-      css: style,
-      className: "widget-plantilla-capas jimu-widget",
-      children: [
-        mapWidgetId && (_emotion_jsx.jsx)(jimu_arcgis.JimuMapViewComponent, {
-          useMapWidgetId: mapWidgetId,
-          onActiveViewChange: this.activeViewChangeHandler
-        }),
-        (_emotion_jsx.jsxs)("h2", {
-          className: "widget-title",
-          children: [
-            titlePrefix,
-            (_emotion_jsx.jsx)("span", { className: "highlight", children: titleHighlight })
-          ]
-        }),
-        (_emotion_jsx.jsx)("div", {
-          className: "category-container",
-          children: CATEGORIES.map(cat => {
-            const isExpanded = !!expandedGroups[cat.key];
-            const groupLayers = layers.filter(l => l.componentKey === cat.key);
-            return (_emotion_jsx.jsxs)("div", {
-              className: `category-card ${isExpanded ? 'expanded' : ''}`,
-              style: { borderColor: isExpanded ? cat.color : '#1e293b' },
-              children: [
-                (_emotion_jsx.jsxs)("div", {
-                  className: "category-header",
-                  onClick: () => this.toggleGroup(cat.key),
-                  children: [
-                    (_emotion_jsx.jsxs)("div", {
-                      className: "header-left",
-                      children: [
-                        this.renderCategoryIcon(cat.icon, cat.color),
-                        (_emotion_jsx.jsx)("span", { className: "category-title", style: { color: cat.color }, children: cat.title })
-                      ]
-                    }),
-                    (_emotion_jsx.jsx)("div", {
-                      className: "chevron-icon",
-                      children: (_emotion_jsx.jsx)("svg", {
-                        width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2.5", strokeLinecap="round", strokeLinejoin="round",
-                        style: { transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' },
-                        children: (_emotion_jsx.jsx)("polyline", { points: "6 9 12 15 18 9" })
-                      })
-                    })
-                  ]
-                }),
-                isExpanded && (_emotion_jsx.jsx)("div", {
-                  className: "category-body",
-                  children: groupLayers.map(item => (
-                    (_emotion_jsx.jsxs)("div", {
-                      className: "layer-row",
-                      children: [
-                        (_emotion_jsx.jsxs)("div", {
-                          className: "layer-left",
-                          children: [
-                            this.renderLayerIcon(item.iconType || 'layers', cat.color),
-                            (_emotion_jsx.jsx)("span", { className: "layer-label", children: item.title })
-                          ]
-                        }),
-                        (_emotion_jsx.jsx)(jimu_ui.Switch, {
-                          checked: item.visible,
-                          onChange: () => this.toggleLayerVisibility(item.id)
-                        })
-                      ]
-                    }, item.id)
-                  ))
-                })
-              ]
-            }, cat.key);
-          })
-        })
-      ]
-    });
-  }
-}
-function __set_webpack_public_path__(url) { __webpack_require__.p = url; }
-})();
-return __webpack_exports__;
-})()
-			);
-		}
-	};
-});
+  .collapse { position: absolute; top: 10px; left: 10px; }
+  h2 { font-size: 13px; margin: 0 0 6px; }
+  h3 { font-size: 12px; margin: 10px 0 4px; font-weight: 600; }
+  label { display: flex; align-items: center; gap: 6px; margin: 2px 0; cursor: pointer; }
+  label span { flex: 1; }
+  input[type=range] { width: 100%; }
+  button { font-size: 12px; padding: 2px 8px; border-radius: 4px; border: 1px solid currentColor; background: transparent; color: inherit; cursor: pointer; }
+  button[aria-pressed=true] { background: rgba(78, 168, 255, 0.25); }
+  .note { opacity: 0.75; margin: 4px 0 0; line-height: 1.35; }
+  .legend div { margin: 2px 0; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 8px; margin: 4px 0 0; }
+  dt { opacity: 0.75; } dd { margin: 0; word-break: break-word; }
+  .tools { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .status { margin-top: 8px; opacity: 0.75; }
+`,oe=e.css`
+  position: absolute; pointer-events: none; max-width: 280px; background: rgba(16, 24, 32, 0.95); color: #e6edf3;
+  border: 1px solid #344453; border-radius: 4px; padding: 6px 8px; font-size: 12px; line-height: 1.35; z-index: 10;
+  b { display: block; margin-bottom: 2px; }
+  span { color: #8fa3b5; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+`;function re(p){var f,v,h,x,b,j,w,S,R;const k=(null!==(v=null===(f=p.config)||void 0===f?void 0:f.serverUrl)&&void 0!==v?v:"https://dureyes97.github.io/avance-plmb").replace(/\/$/,""),I=null===(h=p.useMapWidgetIds)||void 0===h?void 0:h[0],E=null===(x=p.outputDataSources)||void 0===x?void 0:x[0],M=e.React.useMemo(()=>E?(0,e.Immutable)({dataSourceId:E,mainDataSourceId:E}):null,[E]),[D,N]=e.React.useState(null),P=e.React.useRef(null),[H,X]=e.React.useState(null);e.React.useEffect(()=>{if(I||!P.current)return;const e=new n.default({container:P.current,map:new a.default({portalItem:{id:q.id,portal:{url:q.portalUrl}}}),qualityProfile:"high",ui:{components:["zoom","compass"]}});return X(e),()=>{X(null),e.destroy()}},[I]);const[re,se]=e.React.useState(!1),ie=I?"3d"===(null===(b=null==D?void 0:D.view)||void 0===b?void 0:b.type)?D.view:null:H,le=e.React.useRef(null);le.current=ie;const ce=e.React.useRef([]),ue=e.React.useRef([]),de=e.React.useRef(null),pe=e.React.useRef(null),[fe,ve]=e.React.useState(null),he=e.React.useRef(null);he.current=fe;const[me,ge]=e.React.useState(null),[xe,be]=e.React.useState([]),[ye,je]=e.React.useState(0),[we,Se]=e.React.useState(0),[Re,ke]=e.React.useState([]),[Ie,Ce]=e.React.useState("schedule"),Fe=e.ReactRedux.useSelector(e=>{var t,a;return null===(a=null===(t=e.widgetsState)||void 0===t?void 0:t[d])||void 0===a?void 0:a.cutoff}),Ee=null!=Fe?Fe:m(),Me=e.React.useCallback(t=>{(0,e.getAppStore)().dispatch(e.appActions.widgetStatePropChange(d,"cutoff",t))},[]),[De,Ne]=e.React.useState(!1),[Ae,$e]=e.React.useState(!1),Oe="schedule"===Ie?function(e,t,a){const n=`timestamp '${g(e)} 00:00:00'`,o=`(FechaInicioDate <= ${n} OR (FechaInicioDate IS NULL AND FechaFinDate <= ${n}))`,r="(FechaInicioDate IS NULL AND FechaFinDate IS NULL)";return t?a?o:`(${o} OR ${r})`:a?`NOT ${r}`:null}(Ee,De,Ae):null,[Te,Pe]=e.React.useState(null),[Ue,_e]=e.React.useState(null),[ze,Be]=e.React.useState(!1),[Ve,qe]=e.React.useState(!1),[Le,Je]=e.React.useState(100),[Ge,Qe]=e.React.useState(!0),[He,We]=e.React.useState(!1),[Ke,Xe]=e.React.useState("Conectando con el mapa\u2026"),[Ye,Ze]=e.React.useState(null);e.React.useEffect(()=>{var e;if(!ie)return be([]),void Xe(I&&D?"El mapa conectado no es una escena 3D: elige un widget Mapa con un web scene.":"Abriendo la escena\u2026");let t=!1;const a=[],n=new r.default({title:"Huellas prediales",listMode:"hide",elevationInfo:{mode:"on-the-ground"}}),o=document.createElement("div");o.style.cssText="position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:10",null===(e=ie.container)||void 0===e||e.appendChild(o),_e(o),a.push(()=>{o.remove(),_e(null)}),ie.when().then(()=>_(this,void 0,void 0,function*(){var e,o,r;const i=ie.map;if(yield Promise.all(W(i).map(e=>_(this,void 0,void 0,function*(){return yield e.load().catch(()=>null)}))),t)return;const c=Object.keys(V).map(e=>{const t=K(i,V[e],new RegExp(`\\b${e}\\b`,"i"));return t?{code:e,layer:t}:null}).filter(Boolean);if(!c.length)return void Xe("La escena del mapa no tiene las capas de avance E15, I16 ni E16.");for(const{layer:e}of c){const{renderer:t,popupEnabled:n,visible:o}=e;e.set({popupEnabled:!1,visible:!0}),a.push(()=>{e.set({renderer:t,popupEnabled:n,visible:o})})}i.add(n),a.push(()=>{i.remove(n),n.destroy()}),ce.current=c,be(c);for(const e of c)ie.whenLayerView(e.layer).then(t=>{e.layerView=t,je(e=>e+1)},t=>{console.error(e.code,t),Xe(`No se pudo dibujar ${e.code}: ${t.message}`)});const d=K(i,L,/volumetr/i);if(pe.current=d,We(!!d),d){const{filter:e,visible:t}=d;Qe(t),a.push(()=>{d.set({filter:e,visible:t})})}const p=yield fetch(`${k}/predial-station-footprints.json`).then(e=>_(this,void 0,void 0,function*(){return e.ok?yield e.json():{stations:[]}}),()=>({stations:[]}));if(t)return;const f=[];for(const{code:t}of c)for(const a of null!==(r=null===(o=null===(e=p.stations)||void 0===e?void 0:e.find(e=>e.station===t))||void 0===o?void 0:o.parts)&&void 0!==r?r:[])f.push(a.coordinates),n.add(new s.default({geometry:new l.default({rings:[a.coordinates],spatialReference:{wkid:4326}}),symbol:{type:"simple-fill",color:[255,159,67,.2],outline:{color:[255,209,161],width:1.2}}}));if(!d)return;const v=yield Promise.all(c.map(e=>_(this,void 0,void 0,function*(){return yield function(e){return F(this,void 0,void 0,function*(){var t;const a=[];for(let n=0;;n++){const o=yield fetch(`${e}/nodepages/${n}`).catch(()=>null);if(!(null==o?void 0:o.ok))break;const{nodes:r}=yield o.json();for(const e of null!=r?r:[]){if(!e.mesh||(null===(t=e.children)||void 0===t?void 0:t.length)||!e.obb)continue;const n=A(e.obb);$(n)<=O&&a.push(n)}if(!(null==r?void 0:r.length))break}return a})}(`${e.layer.url}/layers/${e.layer.layerId}`)})));t||(d.filter=new u.default({geometries:[...f,...v.flat()].map(e=>new l.default({rings:[e],spatialReference:{wkid:4326}})),spatialRelationship:"disjoint"}))})).catch(e=>{console.error(e),Xe(`No se pudo leer la escena del mapa: ${e.message}`)});const i=[ie.on("click",e=>{st.current.click(e)}),ie.on("pointer-move",e=>{st.current.move(e)}),ie.on("pointer-leave",()=>{Pe(null)})];return()=>{t=!0,i.forEach(e=>{e.remove()});for(const e of ue.current)e.remove();ue.current=[];for(const e of ce.current)e.layerView&&(e.layerView.filter=null);a.reverse().forEach(e=>{e()}),ce.current=[],pe.current=null}},[ie,D,I,k]),e.React.useEffect(()=>{const e=null==ie?void 0:ie.map.ground;if(!e)return;const{opacity:t,navigationConstraint:a}=e;return e.opacity=Le/100,Le<100&&(e.navigationConstraint={type:"none"}),()=>{e.opacity=t,e.navigationConstraint=a}},[ie,Le]);const et=e.React.useMemo(()=>{var e;const t=new Map;for(const a of null!==(e=null==me?void 0:me.attributes)&&void 0!==e?e:[])null==a.FechaInicioDate&&null==a.FechaFinDate||(t.has(a.Seccion)||t.set(a.Seccion,[]),t.get(a.Seccion).push(a));return t},[me]);e.React.useEffect(()=>{var e;for(const t of xe)t.layer.renderer="schedule"===Ie?Z(null!==(e=et.get(t.code))&&void 0!==e?e:[],Ee):Y[Ie]},[xe,Ie,et,Ee]),e.React.useEffect(()=>{if(!ze||!ie)return;const e=new c.default({view:ie});return ie.ui.add(e,"top-right"),()=>{ie.ui.remove(e),e.destroy()}},[ze,ie]),e.React.useEffect(()=>{if(!Ve||!ie)return;let e=0,t=performance.now();const a=n=>{const o=(ie.camera.heading+Q*(n-t)/1e3)%360;t=n,ie.goTo({target:ie.center,heading:o,tilt:ie.camera.tilt,scale:ie.scale},{animate:!1}).catch(()=>null),e=requestAnimationFrame(a)};e=requestAnimationFrame(a);const n=ie.on(["drag","mouse-wheel"],()=>{qe(!1)});return()=>{cancelAnimationFrame(e),n.remove()}},[Ve,ie]),e.React.useEffect(()=>{let e=!1;return fetch(`${k}/data/avance-elements.json`).then(e=>_(this,void 0,void 0,function*(){if(!e.ok)throw new Error(`HTTP ${e.status}`);return yield e.json()})).then(({columns:t,rows:a})=>{if(e)return;const n=a.map((e,a)=>{const n={[T]:a+1};return t.forEach((t,a)=>{U.includes(t)&&(n[t]=e[a])}),n}),r=new Map(n.map(e=>[`${e.Seccion}:${e.OID}`,e[T]])),l=t.indexOf("lon"),c=t.indexOf("lat"),u=new o.default({source:n.map((e,t)=>{var n,o;return new s.default({attributes:e,geometry:new i.default({longitude:null!==(n=a[t][l])&&void 0!==n?n:0,latitude:null!==(o=a[t][c])&&void 0!==o?o:0})})}),objectIdField:T,geometryType:"point",spatialReference:{wkid:4326},fields:U.map(e=>({name:e,type:e===T?"oid":e.endsWith("Date")?"date":["OID","Avance","z"].includes(e)?"double":"string"}))}),d={attributes:n,recordIdByElement:r,matcher:u};de.current=d,ge(d)}).catch(e=>{console.error(e),Xe(`No se pudo leer la tabla de elementos de ${k}: ${e.message}`)}),()=>{e=!0}},[k]),e.React.useEffect(()=>{fe&&me&&(fe.setSourceRecords(me.attributes.map(e=>fe.buildRecord({attributes:e}))),fe.setStatus(e.DataSourceStatus.Unloaded),fe.setCountStatus(e.DataSourceStatus.Unloaded),Se(e=>e+1))},[fe,me]),e.React.useEffect(()=>{var e;if(!me)return;let t=!1;const a=null===(e=null==fe?void 0:fe.getCurrentQueryParams())||void 0===e?void 0:e.where,n=[a&&"1=1"!==a?`(${a})`:null,Oe].filter(Boolean).join(" AND ");return(()=>_(this,void 0,void 0,function*(){var e;if(!n){for(const e of ce.current)e.layerView&&(e.layerView.filter=null);return void Ze(null)}const a=yield me.matcher.queryObjectIds({where:n});if(t)return;const o=new Map;for(const e of a){const t=me.attributes[Number(e)-1];o.has(t.Seccion)||o.set(t.Seccion,[]),o.get(t.Seccion).push(t.OID)}for(const t of ce.current)t.layerView&&(t.layerView.filter={objectIds:null!==(e=o.get(t.code))&&void 0!==e?e:[-1]});Ze(a.length)}))().catch(e=>{console.error("filtro",e),Xe(`No se pudo aplicar el filtro: ${e.message}`)}),()=>{t=!0}},[fe,me,we,ye,Oe]),e.React.useEffect(()=>{for(const e of ue.current)e.remove();if(ue.current=[],!me||!Re.length)return;const e=new Map;for(const t of Re.slice(0,G)){const a=me.attributes[Number(t)-1];a&&(e.has(a.Seccion)||e.set(a.Seccion,[]),e.get(a.Seccion).push(a.OID))}for(const t of ce.current){const a=e.get(t.code);a&&t.layerView&&ue.current.push(t.layerView.highlight(a))}},[me,Re,ye]);const tt=e=>{var t;const a=e&&ce.current.find(t=>t.layer===e.graphic.layer);return a&&(null===(t=de.current)||void 0===t?void 0:t.recordIdByElement.get(`${a.code}:${e.graphic.getObjectId()}`))},at=e=>_(this,void 0,void 0,function*(){const{results:t}=yield le.current.hitTest(e,{include:ce.current.filter(e=>e.layer.visible).map(e=>e.layer)});return t.find(e=>"graphic"===e.type)});function nt(e){return _(this,void 0,void 0,function*(){if(!le.current||!ce.current.length)return;const t=yield at(e);if(!t)return;const a=tt(t);null!=a?he.current?he.current.selectRecordsByIds([a]):ke([a]):Xe("El elemento no est\xe1 en la tabla de avance: regenera avance-elements.json.")})}const ot=e.React.useRef({busy:!1,next:null});function rt(e){return _(this,void 0,void 0,function*(){if(ot.current.next=e,!ot.current.busy&&ce.current.length){ot.current.busy=!0;try{for(;ot.current.next;){const e=ot.current.next;if(ot.current.next=null,!le.current)return;const t=tt(yield at(e));Pe(t?{x:e.x,y:e.y,a:de.current.attributes[t-1]}:null)}}catch(e){Pe(null)}finally{ot.current.busy=!1}}})}const st=e.React.useRef({click:nt,move:rt});st.current={click:nt,move:rt};const it=null!==(j=null==me?void 0:me.attributes.length)&&void 0!==j?j:0;e.React.useEffect(()=>{if(!me||!xe.length)return;const e=null==Ye?"":` \xb7 ${ee(Ye)} visibles con el filtro`;Xe(`${xe.length} secciones \xb7 ${ee(it)} elementos${e}${E?"":" \xb7 abre la configuraci\xf3n del widget para crear la fuente de datos"}`)},[me,xe.length,it,Ye,E]);const lt=1===Re.length&&me?me.attributes[Number(Re[0])-1]:null,ct=e.React.useMemo(()=>{var e,t;const a={};for(const n of null!==(e=null==me?void 0:me.attributes)&&void 0!==e?e:[])a[n.EstadoAvance]=(null!==(t=a[n.EstadoAvance])&&void 0!==t?t:0)+1;return a},[me]);return(0,e.jsx)("div",{css:ne,className:"jimu-widget widget-avance-obra-escena"},I&&(0,e.jsx)(t.JimuMapViewComponent,{useMapWidgetId:I,onActiveViewChange:e=>{N(e)}}),M&&(0,e.jsx)(e.DataSourceComponent,{widgetId:p.id,useDataSource:M,onDataSourceCreated:e=>{ve(e)},onQueryRequired:()=>{Se(e=>e+1)},onDataSourceInfoChange:()=>{Se(e=>e+1)},onSelectionChange:e=>{ke(e?e.asMutable():[])}}),Te&&Ue&&e.ReactDOM.createPortal((0,e.jsx)("div",{css:oe,style:{left:Te.x+14,top:Te.y+14}},(0,e.jsx)("b",null,Te.a.Family||Te.a.Categoria||"Elemento",Te.a.Nivel?` \xb7 ${Te.a.Nivel}`:""),(0,e.jsx)("i",{className:"swatch",style:{background:te(Te.a.EstadoAvance)}}),Te.a.EstadoAvance,null!=Te.a.Avance?` \xb7 ${ee(Te.a.Avance)} %`:"",(0,e.jsx)("br",null),(0,e.jsx)("i",{className:"swatch",style:{background:ae(y(Te.a,Ee))}}),y(Te.a,Ee)," al ",g(Ee),(0,e.jsx)("br",null),Te.a.Actividad&&(0,e.jsx)(e.React.Fragment,null,(0,e.jsx)("span",null,"Actividad")," ",Te.a.Actividad,(0,e.jsx)("br",null)),(Te.a.FechaInicio||Te.a.FechaFin)&&(0,e.jsx)(e.React.Fragment,null,(0,e.jsx)("span",null,"Programado")," ",null!==(w=Te.a.FechaInicio)&&void 0!==w?w:"?"," \u2192 ",null!==(S=Te.a.FechaFin)&&void 0!==S?S:"?")),Ue),!I&&(0,e.jsx)("div",{className:"scene",ref:P}),re?(0,e.jsx)("button",{type:"button",className:"collapse",onClick:()=>{se(!1)}},"Avance \u25b8"):(0,e.jsx)("div",{className:"panel"},(0,e.jsx)("h2",null,"Avance de obra \xb7 E15 \xb7 I16 \xb7 E16",!I&&(0,e.jsx)("button",{type:"button",style:{float:"right"},onClick:()=>{se(!0)},title:"Ocultar panel"},"\u25c2")),xe.length>0&&(0,e.jsx)(e.React.Fragment,null,(0,e.jsx)("h3",null,"Secciones"),xe.map(t=>{var a;return(0,e.jsx)("label",{key:t.code},(0,e.jsx)("input",{type:"checkbox",defaultChecked:!0,onChange:e=>{t.layer.visible=e.target.checked}}),(0,e.jsx)("span",null,null!==(a=B[t.code])&&void 0!==a?a:t.code),(0,e.jsx)("button",{type:"button",onClick:e=>{var a;e.preventDefault(),a=t,null==ie||ie.goTo({target:a.layer.fullExtent,tilt:60,heading:20},{duration:1200}).catch(e=>{console.warn("goTo",e)})}},"Ir"))}),He&&(0,e.jsx)("label",null,(0,e.jsx)("input",{type:"checkbox",checked:Ge,onChange:e=>{Qe(e.target.checked),pe.current&&(pe.current.visible=e.target.checked)}}),(0,e.jsx)("span",null,"Volumetr\xeda (sin las estaciones)")),(0,e.jsx)("h3",null,"Color"),(0,e.jsx)("label",null,(0,e.jsx)("input",{type:"radio",name:`${p.id}-color`,checked:"status"===Ie,onChange:()=>{Ce("status")}}),(0,e.jsx)("span",null,"Estado de avance")),(0,e.jsx)("label",null,(0,e.jsx)("input",{type:"radio",name:`${p.id}-color`,checked:"schedule"===Ie,onChange:()=>{Ce("schedule")}}),(0,e.jsx)("span",null,"Cronograma (4D)")),(0,e.jsx)("label",null,(0,e.jsx)("input",{type:"radio",name:`${p.id}-color`,checked:"source"===Ie,onChange:()=>{Ce("source")}}),(0,e.jsx)("span",null,"Colores del modelo")),"status"===Ie&&(0,e.jsx)("div",{className:"legend"},z.map(t=>{var a;return(0,e.jsx)("div",{key:t.value},(0,e.jsx)("i",{className:"swatch",style:{background:t.css}}),t.value," \xb7 ",ee(null!==(a=ct[t.value])&&void 0!==a?a:0))})),"schedule"===Ie&&(0,e.jsx)(C,{elements:null!==(R=null==me?void 0:me.attributes)&&void 0!==R?R:[],cutoff:Ee,onCutoffChange:Me,buildUp:De,onBuildUpChange:Ne,hideUnscheduled:Ae,onHideUnscheduledChange:$e}),(0,e.jsx)("h3",null,"Terreno \xb7 ",Le," %"),(0,e.jsx)("input",{type:"range",min:0,max:100,step:5,value:Le,"aria-label":"Opacidad del terreno",onChange:e=>{Je(Number(e.target.value))}}),(0,e.jsx)("h3",null,"Elemento seleccionado"),lt?(0,e.jsx)("dl",null,(0,e.jsx)("dt",null,"Estado"),(0,e.jsx)("dd",null,(0,e.jsx)("i",{className:"swatch",style:{background:te(lt.EstadoAvance)}}),lt.EstadoAvance),J.filter(([e])=>null!=lt[e]&&""!==lt[e]).map(([t,a])=>(0,e.jsx)(e.React.Fragment,{key:t},(0,e.jsx)("dt",null,a),(0,e.jsx)("dd",null,String(lt[t]))))):(0,e.jsx)("p",{className:"note"},Re.length>1?`${ee(Re.length)} elementos seleccionados${Re.length>G?` (se resaltan ${ee(G)})`:""}.`:"Haz clic en un elemento de la escena o selecci\xf3nalo en una tabla, lista o gr\xe1fico."),(0,e.jsx)("div",{className:"tools"},(0,e.jsx)("button",{type:"button",onClick:()=>{!function(){const e=ce.current.filter(e=>e.layer.visible).map(e=>e.layer.fullExtent).filter(Boolean);if(!ie||!e.length)return;const t=e.reduce((e,t)=>e.clone().union(t));ie.goTo({target:t.expand(1.1),tilt:55,heading:15},{duration:1200}).catch(e=>{console.warn("goTo",e)})}()}},"Encuadrar todo"),(0,e.jsx)("button",{type:"button","aria-pressed":ze,onClick:()=>{Be(!ze)},title:"Plano de corte para ver el interior"},"Cortar"),(0,e.jsx)("button",{type:"button","aria-pressed":Ve,onClick:()=>{qe(!Ve)},title:"Gira alrededor del centro de la vista; arrastrar lo detiene"},"Girar"))),(0,e.jsx)("p",{className:"status",role:"status"},Ke)))}function se(e){f.p=e}})(),v})())}}});
