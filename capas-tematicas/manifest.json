@@ -1,0 +1,27 @@
+{
+  "name": "capas-tematicas",
+  "label": "Capas Temáticas Bogotá",
+  "type": "widget",
+  "version": "1.17.0",
+  "exbVersion": "1.17.0",
+  "author": "Equipo de Desarrollo SIG",
+  "description": "Widget de exploración territorial y control de capas temáticas clasificadas en 5 categorías (Información base, Social, Económico, Urbanístico, Ambiente) con estilo Calcite y diseño oscuro.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": [
+    "jimu-arcgis"
+  ],
+  "properties": {
+    "hasConfig": true,
+    "hasSettingPage": true,
+    "hasMainClass": true
+  },
+  "translatedLocales": [
+    "en",
+    "es"
+  ],
+  "defaultSize": {
+    "width": 380,
+    "height": 720
+  }
+}
