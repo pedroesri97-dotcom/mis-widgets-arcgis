@@ -1,0 +1,27 @@
+{
+  "name": "estadisticas-capas",
+  "label": "Estadísticas de Capas",
+  "type": "widget",
+  "version": "1.17.0",
+  "exbVersion": "1.17.0",
+  "author": "Equipo de Desarrollo SIG",
+  "description": "Widget de métricas y estadísticas territoriales sincronizado con la activación de capas en mapas 2D y escenas 3D bajo el sistema de diseño Calcite.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": [
+    "jimu-arcgis"
+  ],
+  "properties": {
+    "hasConfig": true,
+    "hasSettingPage": true,
+    "hasMainClass": true
+  },
+  "translatedLocales": [
+    "en",
+    "es"
+  ],
+  "defaultSize": {
+    "width": 340,
+    "height": 480
+  }
+}
