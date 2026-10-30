@@ -1,0 +1,23 @@
+{
+  "name": "avance-obra-escena-sdp-v2",
+  "label": "Avance de Obra 4D · SDP",
+  "type": "widget",
+  "version": "1.17.0",
+  "exbVersion": "1.17.0",
+  "author": "Equipo de Desarrollo SIG",
+  "description": "Widget de seguimiento y simulación temporal 4D del avance de obra sobre la escena tridimensional PLMB (Estaciones E15, I16 y E16) bajo el sistema de diseño Calcite.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasSetting": true
+  },
+  "dependency": "jimu-arcgis",
+  "translatedLocales": [
+    "en",
+    "es"
+  ],
+  "defaultSize": {
+    "width": 360,
+    "height": 580
+  }
+}
