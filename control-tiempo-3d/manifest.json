@@ -1,0 +1,27 @@
+{
+  "name": "control-tiempo-3d",
+  "label": "Control de Tiempo y Sombras 3D",
+  "type": "widget",
+  "version": "1.17.0",
+  "exbVersion": "1.17.0",
+  "author": "Equipo de Desarrollo SIG",
+  "description": "Widget de simulación de iluminación solar, ciclo diurno/nocturno y sombras volumétricas directas en tiempo real para escenas tridimensionales (SceneView) bajo el sistema de diseño Calcite.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": [
+    "jimu-arcgis"
+  ],
+  "properties": {
+    "hasConfig": true,
+    "hasSettingPage": true,
+    "hasMainClass": true
+  },
+  "translatedLocales": [
+    "en",
+    "es"
+  ],
+  "defaultSize": {
+    "width": 320,
+    "height": 340
+  }
+}
