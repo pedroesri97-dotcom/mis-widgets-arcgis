@@ -1,0 +1,464 @@
+{
+  "headerSubtitle": "EXPLORACIÓN TERRITORIAL",
+  "headerTitle": "Capas Temáticas",
+  "allOffByDefault": true,
+  "showClock": true,
+  "showUnavailableTag": true,
+  "allowGroupToggle": true,
+  "categories": [
+    {
+      "id": "cat-base",
+      "code": "base",
+      "title": "INFORMACIÓN BASE",
+      "badge": "17 CAPAS",
+      "expandedByDefault": false,
+      "layers": [
+        {
+          "id": "base-fachadas-v2",
+          "title": "Fachadas v2",
+          "mapLayerTitle": "Fachadas v2",
+          "sceneLayerTitle": "Fachadas v2",
+          "color": "#00e5ff",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-zona-piloto",
+          "title": "Zona piloto",
+          "mapLayerTitle": "Zona piloto",
+          "sceneLayerTitle": "Zona piloto",
+          "color": "#00e5ff",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-volumetria",
+          "title": "Fachadas",
+          "mapLayerTitle": "Fachadas",
+          "sceneLayerTitle": "Fachadas",
+          "color": "#00e5ff",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-ortofoto",
+          "title": "Ortofotomosaico urbano de Bogotá D.C. Año 2025",
+          "mapLayerTitle": "Ortofotomosaico urbano de Bogotá D.C. Año 2025",
+          "sceneLayerTitle": "Ortofotomosaico urbano de Bogotá D.C. Año 2025",
+          "color": "#00e5ff",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-canalizacion",
+          "title": "Canalizacion",
+          "mapLayerTitle": "Canalizacion",
+          "sceneLayerTitle": "Canalizacion",
+          "group": "Telecomunicaciones",
+          "color": "#00e5ff",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-poste-telecom",
+          "title": "Poste telecomunicaciones",
+          "mapLayerTitle": "Poste telecomunicaciones",
+          "sceneLayerTitle": "Poste telecomunicaciones",
+          "group": "Telecomunicaciones",
+          "color": "#06b6d4",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-armario-tel",
+          "title": "Armario Telefonico",
+          "mapLayerTitle": "Armario Telefonico",
+          "sceneLayerTitle": "Armario Telefonico",
+          "group": "Telecomunicaciones",
+          "color": "#38bdf8",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-sumidero-comb",
+          "title": "Sumidero Sanitario Combinado",
+          "mapLayerTitle": "Sumidero Sanitario Combinado",
+          "sceneLayerTitle": "Sumidero Sanitario Combinado",
+          "group": "Acueducto",
+          "color": "#00e5ff",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-red-troncal",
+          "title": "Red troncal sanitario combinado",
+          "mapLayerTitle": "Red troncal sanitario combinado",
+          "sceneLayerTitle": "Red troncal sanitario combinado",
+          "group": "Acueducto",
+          "color": "#06b6d4",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-red-local",
+          "title": "Red Local Sanitario Combinado",
+          "mapLayerTitle": "Red Local Sanitario Combinado",
+          "sceneLayerTitle": "Red Local Sanitario Combinado",
+          "group": "Acueducto",
+          "color": "#38bdf8",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-hidrante",
+          "title": "Hidrante",
+          "mapLayerTitle": "Hidrante",
+          "sceneLayerTitle": "Hidrante",
+          "group": "Acueducto",
+          "color": "#0ea5e9",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-equip-salud",
+          "title": "Equipamiento Salud",
+          "mapLayerTitle": "Equipamiento Salud",
+          "sceneLayerTitle": "Equipamiento Salud",
+          "group": "Equipamientos",
+          "color": "#ef4444",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-equip-educativo",
+          "title": "Equipamiento Educativo",
+          "mapLayerTitle": "Equipamiento Educativo",
+          "sceneLayerTitle": "Equipamiento Educativo",
+          "group": "Equipamientos",
+          "color": "#3b82f6",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-equip-cultura",
+          "title": "Equipamiento Cultura",
+          "mapLayerTitle": "Equipamiento Cultura",
+          "sceneLayerTitle": "Equipamiento Cultura",
+          "group": "Equipamientos",
+          "color": "#a855f7",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-equip-bienestar",
+          "title": "Equipamiento Bienestar Social",
+          "mapLayerTitle": "Equipamiento Bienestar Social",
+          "sceneLayerTitle": "Equipamiento Bienestar Social",
+          "group": "Equipamientos",
+          "color": "#f59e0b",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-parque",
+          "title": "Parque",
+          "mapLayerTitle": "Parque",
+          "sceneLayerTitle": "Parque",
+          "group": "Arbolado y parques",
+          "color": "#10b981",
+          "visibleByDefault": false
+        },
+        {
+          "id": "base-arbolado-urbano",
+          "title": "Arbolado urbano",
+          "mapLayerTitle": "Arbolado urbano",
+          "sceneLayerTitle": "Arbolado urbano",
+          "group": "Arbolado y parques",
+          "color": "#22c55e",
+          "visibleByDefault": false
+        }
+      ]
+    },
+    {
+      "id": "cat-estaciones-metro",
+      "code": "estaciones-metro",
+      "title": "ESTACIONES DE METRO",
+      "badge": "11 CAPAS",
+      "expandedByDefault": false,
+      "layers": [
+        {
+          "id": "metro-inter-1100",
+          "title": "L1T1 1100 216 CON ED EST MO 0001",
+          "mapLayerTitle": "L1T1 1100 216 CON ED EST MO 0001",
+          "sceneLayerTitle": "L1T1 1100 216 CON ED EST MO 0001",
+          "group": "Intersección",
+          "color": "#10b981",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-inter-1150",
+          "title": "L1T1 1150 216 CON ED EST MO 0001",
+          "mapLayerTitle": "L1T1 1150 216 CON ED EST MO 0001",
+          "sceneLayerTitle": "L1T1 1150 216 CON ED EST MO 0001",
+          "group": "Intersección",
+          "color": "#059669",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e16-1310",
+          "title": "L1T1 1310 416 CON ED EST MO 0001",
+          "mapLayerTitle": "L1T1 1310 416 CON ED EST MO 0001",
+          "sceneLayerTitle": "L1T1 1310 416 CON ED EST MO 0001",
+          "group": "Estación 16",
+          "color": "#06b6d4",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e16-1300-2",
+          "title": "L1T1 1300 416 CON ED EST MO 0002",
+          "mapLayerTitle": "L1T1 1300 416 CON ED EST MO 0002",
+          "sceneLayerTitle": "L1T1 1300 416 CON ED EST MO 0002",
+          "group": "Estación 16",
+          "color": "#0891b2",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e16-1300-1",
+          "title": "L1T1 1300 416 CON ED EST MO 0001",
+          "mapLayerTitle": "L1T1 1300 416 CON ED EST MO 0001",
+          "sceneLayerTitle": "L1T1 1300 416 CON ED EST MO 0001",
+          "group": "Estación 16",
+          "color": "#0e7490",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e16-1150",
+          "title": "L1T1 1150 316 CON ED EST MO 0001",
+          "mapLayerTitle": "L1T1 1150 316 CON ED EST MO 0001",
+          "sceneLayerTitle": "L1T1 1150 316 CON ED EST MO 0001",
+          "group": "Estación 16",
+          "color": "#0284c7",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e16-1100",
+          "title": "L1T1 1100 316 CON ED EST MO 0001",
+          "mapLayerTitle": "L1T1 1100 316 CON ED EST MO 0001",
+          "sceneLayerTitle": "L1T1 1100 316 CON ED EST MO 0001",
+          "group": "Estación 16",
+          "color": "#0369a1",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e16-0000",
+          "title": "L1T1 0000 316 CON ED ARQ MO 0001 V00",
+          "mapLayerTitle": "L1T1 0000 316 CON ED ARQ MO 0001 V00",
+          "sceneLayerTitle": "L1T1 0000 316 CON ED ARQ MO 0001 V00",
+          "group": "Estación 16",
+          "color": "#38bdf8",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e15-1150",
+          "title": "L1T1 1150 315 CON ED EST MO 0001",
+          "mapLayerTitle": "L1T1 1150 315 CON ED EST MO 0001",
+          "sceneLayerTitle": "L1T1 1150 315 CON ED EST MO 0001",
+          "group": "Estación 15",
+          "color": "#6366f1",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e15-1100",
+          "title": "L1T1 1100 315 CON ED EST MO 0001",
+          "mapLayerTitle": "L1T1 1100 315 CON ED EST MO 0001",
+          "sceneLayerTitle": "L1T1 1100 315 CON ED EST MO 0001",
+          "group": "Estación 15",
+          "color": "#4f46e5",
+          "visibleByDefault": false
+        },
+        {
+          "id": "metro-e15-0000",
+          "title": "L1T1 0000 315 CON ED ARQ MO 0001 V00",
+          "mapLayerTitle": "L1T1 0000 315 CON ED ARQ MO 0001 V00",
+          "sceneLayerTitle": "L1T1 0000 315 CON ED ARQ MO 0001 V00",
+          "group": "Estación 15",
+          "color": "#818cf8",
+          "visibleByDefault": false
+        }
+      ]
+    },
+    {
+      "id": "cat-social",
+      "code": "social",
+      "title": "SOCIAL",
+      "badge": "5 CAPAS",
+      "expandedByDefault": false,
+      "layers": [
+        {
+          "id": "soc-limitaciones",
+          "title": "Limitaciones permanentes manzana",
+          "mapLayerTitle": "Limitaciones permantenes manzana",
+          "sceneLayerTitle": "Limitaciones permantenes manzana",
+          "color": "#f59e0b",
+          "visibleByDefault": false
+        },
+        {
+          "id": "soc-sisben-mzn",
+          "title": "Manzana sisbén promedio",
+          "mapLayerTitle": "Manzana sisbén promedio",
+          "sceneLayerTitle": "Manzana sisbén promedio",
+          "color": "#fbbf24",
+          "visibleByDefault": false
+        },
+        {
+          "id": "soc-personas-hogar",
+          "title": "Personas por hogar",
+          "mapLayerTitle": "Personas por hogar",
+          "sceneLayerTitle": "Personas por hogar",
+          "color": "#00e5ff",
+          "visibleByDefault": false
+        },
+        {
+          "id": "soc-cuartos",
+          "title": "Número de cuartos",
+          "mapLayerTitle": "Número de cuartos",
+          "sceneLayerTitle": "Número de cuartos",
+          "color": "#f43f5e",
+          "visibleByDefault": false
+        },
+        {
+          "id": "soc-puntos-sisben",
+          "title": "Puntos de sisben",
+          "mapLayerTitle": "Puntos de sisben",
+          "sceneLayerTitle": "Puntos de sisben",
+          "color": "#f97316",
+          "visibleByDefault": false
+        }
+      ]
+    },
+    {
+      "id": "cat-economico",
+      "code": "economico",
+      "title": "ECONÓMICO",
+      "badge": "7 CAPAS",
+      "expandedByDefault": false,
+      "layers": [
+        {
+          "id": "econ-suelo-sector",
+          "title": "Sector",
+          "mapLayerTitle": "Sector",
+          "sceneLayerTitle": "Sector",
+          "group": "Valor Suelo Comercial",
+          "color": "#22c55e",
+          "visibleByDefault": false
+        },
+        {
+          "id": "econ-suelo-lote",
+          "title": "Lote",
+          "mapLayerTitle": "Lote",
+          "sceneLayerTitle": "Lote",
+          "group": "Valor Suelo Comercial",
+          "color": "#22c55e",
+          "visibleByDefault": false
+        },
+        {
+          "id": "econ-suelo-manzana",
+          "title": "Manzana",
+          "mapLayerTitle": "Manzana",
+          "sceneLayerTitle": "Manzana",
+          "group": "Valor Suelo Comercial",
+          "color": "#f97316",
+          "visibleByDefault": false
+        },
+        {
+          "id": "econ-actividad-cambio",
+          "title": "Actividad Económica cambio",
+          "mapLayerTitle": "Actividad Economica cambio",
+          "sceneLayerTitle": "Actividad Economica cambio",
+          "color": "#3b82f6",
+          "visibleByDefault": false
+        },
+        {
+          "id": "econ-actividad-eco",
+          "title": "Actividad económica",
+          "mapLayerTitle": "Actividad económica",
+          "sceneLayerTitle": "Actividad económica",
+          "color": "#a855f7",
+          "visibleByDefault": false
+        },
+        {
+          "id": "econ-proy-bogota",
+          "title": "Proyectos Bogotá",
+          "mapLayerTitle": "Proyectos Bogota",
+          "sceneLayerTitle": "Proyectos Bogota",
+          "group": "Nuevos Proyectos",
+          "color": "#d946ef",
+          "visibleByDefault": false
+        },
+        {
+          "id": "econ-proy-lote",
+          "title": "Lote",
+          "mapLayerTitle": "Lote",
+          "sceneLayerTitle": "Lote",
+          "group": "Nuevos Proyectos",
+          "color": "#f43f5e",
+          "visibleByDefault": false
+        }
+      ]
+    },
+    {
+      "id": "cat-urbanistico",
+      "code": "urbanistico",
+      "title": "URBANÍSTICO",
+      "badge": "4 CAPAS",
+      "expandedByDefault": false,
+      "layers": [
+        {
+          "id": "urb-potencial",
+          "title": "Potencial Edificatorio",
+          "mapLayerTitle": "Potencial Edificatorio",
+          "sceneLayerTitle": "Potencial Edificatorio",
+          "color": "#eab308",
+          "visibleByDefault": false
+        },
+        {
+          "id": "urb-metro",
+          "title": "Estación Metro",
+          "mapLayerTitle": "EstacionMetro",
+          "sceneLayerTitle": "EstacionMetro",
+          "group": "Movilidad",
+          "color": "#10b981",
+          "visibleByDefault": false
+        },
+        {
+          "id": "urb-psitp",
+          "title": "PSITP",
+          "mapLayerTitle": "PSITP",
+          "sceneLayerTitle": "PSITP",
+          "group": "Movilidad",
+          "color": "#34d399",
+          "visibleByDefault": false
+        },
+        {
+          "id": "urb-troncal",
+          "title": "Estación Troncal",
+          "mapLayerTitle": "EstacionTronca",
+          "sceneLayerTitle": "EstacionTronca",
+          "group": "Movilidad",
+          "color": "#06b6d4",
+          "visibleByDefault": false
+        }
+      ]
+    },
+    {
+      "id": "cat-ambiente",
+      "code": "ambiente",
+      "title": "AMBIENTE",
+      "badge": "2 CAPAS",
+      "expandedByDefault": false,
+      "layers": [
+        {
+          "id": "amb-ruido",
+          "title": "Mapa ruido 2d - Niveles de Ruido (dB)",
+          "mapLayerTitle": "Mapa ruido 2d - Niveles de Ruido (dB)",
+          "sceneLayerTitle": "Mapa ruido 2d - Niveles de Ruido (dB)",
+          "color": "#06b6d4",
+          "visibleByDefault": false
+        },
+        {
+          "id": "amb-calidad-aire",
+          "title": "Simulación Calidad Aire Bogotá",
+          "mapLayerTitle": "Simulacion Calidad Aire Bogota",
+          "sceneLayerTitle": "Simulacion Calidad Aire Bogota",
+          "color": "#38bdf8",
+          "visibleByDefault": false
+        }
+      ]
+    }
+  ]
+}
