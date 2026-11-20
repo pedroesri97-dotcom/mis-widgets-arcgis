@@ -1,0 +1,24 @@
+{
+  "name": "datos-y-servicios",
+  "label": "Datos y Servicios",
+  "type": "widget",
+  "version": "1.17.0",
+  "exbVersion": "1.17.0",
+  "author": "gemelo digital",
+  "description": "Widget de catálogo y consulta de datos espaciales, servicios web geográficos (APIs, REST, WFS/WMS), fuentes institucionales, fechas de actualización y condiciones de acceso abierto.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasConfig": true,
+    "hasSettingPage": true,
+    "hasMainClass": true
+  },
+  "translatedLocales": [
+    "en",
+    "es"
+  ],
+  "defaultSize": {
+    "width": 980,
+    "height": 560
+  }
+}
