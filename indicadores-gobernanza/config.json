@@ -1,0 +1,22 @@
+{
+  "headerSubtitle": "MONITOREO",
+  "headerTitle": "Indicadores de Gobernanza",
+  "headerDescription": "Seguimiento y visualización de indicadores estratégicos y metas periódicas.",
+  "cards": [
+    {
+      "id": "ind-ejemplo-1",
+      "title": "Nombre del indicador de ejemplo",
+      "currentValue": 50,
+      "unit": "%",
+      "deltaText": "↑ +5 pp",
+      "trendType": "positive",
+      "comparisonTitle": "COMPARATIVA TEMPORAL",
+      "prevPeriodLabel": "Anterior",
+      "prevValue": 45,
+      "currentPeriodLabel": "Actual",
+      "currValue": 50,
+      "description": "Descripción general de la métrica y seguimiento de cumplimiento del objetivo.",
+      "accentColor": "#10b981"
+    }
+  ]
+}
