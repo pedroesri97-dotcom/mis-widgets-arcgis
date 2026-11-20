@@ -1,0 +1,81 @@
+{
+  "headerSubtitle": "OBSERVATORIO · GALERÍA DE CASOS",
+  "headerTitle": "Territorios que ya deciden con datos.",
+  "headerDescription": "Casos de éxito, proyectos estratégicos e innovaciones en analítica geoespacial y simulación territorial del Gemelo Digital de Bogotá.",
+  "autoplay": true,
+  "autoplaySpeed": 4,
+  "themeColors": {
+    "widgetBg": "#070c14",
+    "cardBg": "#0e1622",
+    "accentColor": "#007ac2",
+    "cardBorder": "#1a2533"
+  },
+  "newsItems": [
+    {
+      "id": "caso-1",
+      "title": "Inteligencia Territorial Avanzada",
+      "source": "Secretaría Distrital de Planeación",
+      "date": "Noviembre 2024",
+      "imageUrl": "",
+      "url": "",
+      "dialogId": "",
+      "targetType": "url",
+      "buttonText": "Ver caso"
+    },
+    {
+      "id": "caso-2",
+      "title": "Formación de Técnicos SIG",
+      "source": "Catastro Distrital - IDECA",
+      "date": "Octubre 2024",
+      "imageUrl": "",
+      "url": "",
+      "dialogId": "",
+      "targetType": "url",
+      "buttonText": "Ver caso"
+    },
+    {
+      "id": "caso-3",
+      "title": "SIG Institucional y Catastro Multipropósito",
+      "source": "Unidad Administrativa Especial de Catastro",
+      "date": "Octubre 2024",
+      "imageUrl": "",
+      "url": "",
+      "dialogId": "",
+      "targetType": "url",
+      "buttonText": "Ver caso"
+    },
+    {
+      "id": "caso-4",
+      "title": "Monitoreo y Resiliencia Climática",
+      "source": "Secretaría Distrital de Ambiente",
+      "date": "Septiembre 2024",
+      "imageUrl": "",
+      "url": "",
+      "dialogId": "",
+      "targetType": "url",
+      "buttonText": "Ver caso"
+    },
+    {
+      "id": "caso-5",
+      "title": "Simulación 4D Primera Línea del Metro",
+      "source": "Empresa Metro de Bogotá",
+      "date": "Noviembre 2024",
+      "imageUrl": "",
+      "url": "",
+      "dialogId": "",
+      "targetType": "url",
+      "buttonText": "Ver caso"
+    },
+    {
+      "id": "caso-6",
+      "title": "Evolución y Dinámica del Suelo Urbano",
+      "source": "Secretaría Distrital de Hábitat",
+      "date": "Octubre 2024",
+      "imageUrl": "",
+      "url": "",
+      "dialogId": "",
+      "targetType": "url",
+      "buttonText": "Ver caso"
+    }
+  ]
+}
