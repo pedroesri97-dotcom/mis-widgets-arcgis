@@ -1,0 +1,24 @@
+{
+  "name": "ecosistema-colaboracion",
+  "label": "Ecosistema y Colaboración · Gemelo Digital",
+  "type": "widget",
+  "version": "1.17.0",
+  "exbVersion": "1.17.0",
+  "author": "gemelo digital",
+  "description": "Widget institucional de vinculación de entidades y participación técnica para el Gemelo Digital de Bogotá bajo el sistema de diseño Calcite de ArcGIS.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasConfig": true,
+    "hasSettingPage": true,
+    "hasMainClass": true
+  },
+  "translatedLocales": [
+    "en",
+    "es"
+  ],
+  "defaultSize": {
+    "width": 900,
+    "height": 220
+  }
+}

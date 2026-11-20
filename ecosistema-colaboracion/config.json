@@ -1,0 +1,32 @@
+{
+  "showDividerBar": true,
+  "headerTitle": "Colabora con el Gemelo Digital",
+  "headerDescription": "Espacio de articulación interinstitucional y participación técnica para fortalecer el modelo territorial de Bogotá.",
+  "themeColors": {
+    "widgetBg": "#070c14",
+    "cardBg": "#0e1622",
+    "accentColor": "#007ac2",
+    "cardBorder": "#1a2533"
+  },
+  "entityChannel": {
+    "id": "entity",
+    "title": "¿Tu entidad quiere sumarse al ecosistema?",
+    "subtitle": "Conoce los acuerdos de intercambio de datos espaciales, geoservicios federados (REST, WFS/WMS) y niveles de servicio disponibles.",
+    "buttonText": "Solicitar acceso",
+    "buttonType": "primary",
+    "targetType": "window",
+    "dialogId": "",
+    "url": ""
+  },
+  "feedbackEnabled": true,
+  "feedbackChannel": {
+    "id": "feedback",
+    "title": "Aportar datos o dejar una sugerencia",
+    "subtitle": "Contribuye con observaciones técnicas, capas de información territorial sobre el área de influencia del Metro o sugerencias para optimizar las decisiones.",
+    "buttonText": "Dejar opinión",
+    "buttonType": "secondary",
+    "targetType": "window",
+    "dialogId": "",
+    "url": ""
+  }
+}
